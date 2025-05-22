@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlayTestReview</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!--Navbar class for navgation-->
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">PlayTestReview</a>
+      <!-- No longer required for downsized project only evidence -->
+        <!--Search bar-->
+        <!-- <input type="text" id="search-bar" placeholder="Search games..." /> -->
+      <!--  No longer required for downsized project only evidence -->
+        <!-- list for the navbar -->
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links"> Home</a>
+      <!-- No longer required for downsized project only evidence -->
+          <!-- </li>
+
+          <li class="navbar__item">
+            <a href="/Reviews" class="navbar__links"> Reviews </a>
+          </li>
+
+          <li class="navbar__item">
+            <a href="/game-selection" class="navbar__links"> Game Selection </a>
+          </li>
+
+          <li class="navbar__btn">
+            <a href="/" class="button"> Login/Register </a>
+          </li> -->
+        </ul>
+      </div>
+    </nav>
+    
+    <!-- hero section -->
+     <div class=" main__container">
+      <h1>MY REVIEWS</h1>
+      <h2>These are my thoughts and opinions on games more will be added soon</h2>
+      <p>To see a review click on one the games cover art to see</p>
+     </div>
+
+    <!-- games images section -->
+    <main>
+      <section class="homepage-pic">
+        <div class="homepage-img">
+          <img src="images/pic1.jpg" alt="Devil May Cry 5" />
+          <p class="image-text">Intense Stylish Game</p>
+        </div>
+
+        <div class="homepage-img">
+          <img src="images/pic2.jpg" alt="God Of War" />
+          <p class="image-text">Hack N Slash Game</p>
+        </div>
+
+        <div class="homepage-img">
+          <img src="images/pic3.jpeg" alt="Doom The Dark Ages" />
+          <p class="image-text">FPS Game</p>
+        </div>
+      </section>
+
+      <!--for dynamically rendered game cards-->
+      <section class="game-grid"></section>
+
+    </main>
+
+    <!--displaying reviews-->
+    <div id="review-modal" style="display: none">
+      <div id="modal-content">
+        <span id="close-modal">&times;</span><!--closes the modal when the user clicks off-->
+        <h2 id="modal-review-title"></h2>
+        <div id="modal-review-rating"></div>
+        <p id="modal-review-content"></p>
+      </div>
+    </div>
+    <!--Links to the javascript file app.js-->
+    <script src="app.js"></script>
+  </body>
+</html>
